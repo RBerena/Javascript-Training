@@ -18,8 +18,8 @@ comment
 const points = 100;
 console.log(points);
 
-var score = 75;
-console.log(score);
+// var score = 75;
+// console.log(score);
 
 /*Section 2 of video */
 
@@ -196,3 +196,17 @@ console.log(age === 28); // Will check VALUE and DATATYPE
 console.log(age === '28');// False becuase the datatype doesn't match
 console.log(age !== 28);// False
 console.log(age !== '28');// True
+
+
+// TYPE CONVERSION
+// let score = '100';
+
+// score = Number(score);// Convert '100' into 100
+// console.log(score + 1);
+// console.log(typeof score);
+
+// let result = Number('hello');
+// console.log(result); // NaN
+
+let result = String(50);
+console.log(result, typeof result);
