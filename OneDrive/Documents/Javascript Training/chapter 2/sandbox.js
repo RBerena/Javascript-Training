@@ -1,3 +1,8 @@
+/*
+Author: Raymart Berena
+Date: September 2, 2025
+*/
+
 // Camel-case is used for variables
 let myAge = 25;
 let year = 2025;
