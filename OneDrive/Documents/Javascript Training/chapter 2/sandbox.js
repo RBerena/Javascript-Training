@@ -12,8 +12,8 @@ a
 multi-line 
 comment
 */ 
-let age = 30;
-console.log(age);
+// let age = 30;
+// console.log(age);
 
 const points = 100;
 console.log(points);
@@ -149,3 +149,10 @@ console.log(ninjas);
 // result = ninjas.pop(); Will show the value that was 'popped'(removed)
 
 // console.log(result);
+
+//NULL and UNDEFINED
+let age = null; // explicitly declared
+// null can be used as a placeholder
+
+console.log(age, age + 3, `the age is ${age}`); // age is undefined
+
