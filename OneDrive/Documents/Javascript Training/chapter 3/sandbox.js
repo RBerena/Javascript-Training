@@ -17,3 +17,24 @@ for(let i = 0; i < 3; i++){
     let html = `<div>${names[i]}</div>`;
     console.log(html);
 }
+
+// While Loops
+let i = 0;
+
+// while(i < 3){
+//     console.log('iteration #',i);
+//     i++;
+// }
+
+while(i < names.length){
+    console.log(names[i]);
+    i++;
+}
+
+// Do-While Loops
+i = 5;
+
+do{
+    console.log('value of i is:',i);
+    i++
+}while(i < 5);
