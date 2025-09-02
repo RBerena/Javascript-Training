@@ -109,7 +109,7 @@ const likes = 30;
 
 
 // Template String
-let result = `The blog called ${title} by ${author} has ${likes} likes`
+//let result = `The blog called ${title} by ${author} has ${likes} likes`
 
 //Both methods above return the same output, but template strings are much easier to read
 
@@ -122,3 +122,30 @@ let html = `
             `;
 console.log(html);
 
+// ARRAYS
+let ninjas = ['Naruto', 'Sasuke', 'Sakura'];
+console.log(ninjas);
+// console.log(ninjas[1]); // Sasuke
+
+ninjas[1] = 'Sai';
+console.log(ninjas);
+
+// let ages = [20, 25, 30, 25];
+// console.log(ages[2]); // 30
+
+// let random = ['Raymart', 21, 'Berena', 23];
+// console.log(random);
+// console.log(ninjas.length);
+
+// Array Methods
+
+//let result = ninjas.join(' - ');
+
+// let result = ninjas.indexOf('Sakura');
+
+// let result = ninjas.concat(['Jiraiya', 'Tsunade', 'Orochimaru']);
+
+// let result = ninjas.push('Kakashi'); // Destructive method - adds to original array
+// result = ninjas.pop(); Will show the value that was 'popped'(removed)
+
+// console.log(result);
