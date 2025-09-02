@@ -151,8 +151,48 @@ console.log(ninjas);
 // console.log(result);
 
 //NULL and UNDEFINED
-let age = null; // explicitly declared
+// let age = null; // explicitly declared
 // null can be used as a placeholder
 
-console.log(age, age + 3, `the age is ${age}`); // age is undefined
+// console.log(age, age + 3, `the age is ${age}`); // age is undefined
 
+// BOOLEANS
+console.log(true, false, "true", "false"); // booleans will appear in a different color
+
+// Methods that return booleans
+// email = rberena@rrc.ca declared earlier
+
+let resultTrue = email.includes("@"); // true
+let resultFalse = ninjas.includes("Kakashi"); // false
+console.log(resultTrue);
+console.log(resultFalse);
+
+// Comparison Operators
+let age = 28;
+
+console.log(age == 28);// true
+console.log(age == 30);// false
+console.log(age != 30);// true // ! - is the NOT operator
+console.log(age > 20);// true
+console.log(age < 28);// false
+console.log(age <= 28);// true
+console.log(age >= 28);// true
+
+let name = 'shaun';
+console.log(name == 'shaun'); // true
+console.log(name == 'Shaun');// false - case sensitive
+console.log(name > 'crystal');// comparing position of s in alphabet to c in alpphabet
+console.log(name > 'Shaun');
+console.log(name > 'Crystal');
+
+// Loose Comparison
+// console.log(age == '28');
+// console.log(age == '28');
+console.log(age != 28);
+console.log(age != '28');
+
+// Strict Comparison
+console.log(age === 28); // Will check VALUE and DATATYPE
+console.log(age === '28');// False becuase the datatype doesn't match
+console.log(age !== 28);// False
+console.log(age !== '28');// True
