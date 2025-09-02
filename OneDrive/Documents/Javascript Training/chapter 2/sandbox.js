@@ -88,14 +88,37 @@ console.log(radius, pi);
 result = 245
  */
 
-let likes = 10;
+// let likes = 10;
 
-likes++; //likes (likes is = 10) = likes + 1;
-likes += 10; // likes = likes(current value) + 10
-console.log(likes); // output should be 1
+// likes++; //likes (likes is = 10) = likes + 1;
+// likes += 10; // likes = likes(current value) + 10
+// console.log(likes); // output should be 1
 
 // NaN = Not a Number - occurs when calculation doesn't result in a number
 
-let result = 'the blog has ' + likes + ' likes';
-console.log(result);
+// let result = 'the blog has ' + likes + ' likes';
+// console.log(result);
+
+// TEMPLATE STRINGS
+const title = 'Best reads of 2025';
+const author = "Raymart";
+const likes = 30;
+
+// Concatenation
+// let result = 'The blog called ' + title + ' by ' + author + ' has ' + likes + ' likes';
+
+
+// Template String
+let result = `The blog called ${title} by ${author} has ${likes} likes`
+
+//Both methods above return the same output, but template strings are much easier to read
+
+
+// Creating html templates
+let html = `
+            <h2>${title}</h2>
+            <p> By ${author}</p>
+            <span>This blog has ${likes} likes</span>
+            `;
+console.log(html);
 
