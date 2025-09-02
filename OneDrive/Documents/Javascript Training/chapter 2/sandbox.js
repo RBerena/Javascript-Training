@@ -23,7 +23,7 @@ console.log(score);
 
 /*Section 2 of video */
 
-// strings
+// STRINGS
 console.log('hello, world')
 
 let email = 'rberena@rrc.ca'
@@ -67,4 +67,35 @@ console.log(indexResult);
 // only replaces the first of that character
 // let result = email.replace('r', 't')
 //console.log(result);
+
+// NUMBERS
+let radius = 10;
+const pi = 3.14;
+
+console.log(radius, pi);
+
+// Math Operators +, -, *, /, **, %
+//console.log(10/2);
+//let result = pi * radius**2;
+//let result = radius % 3;
+
+// using BEDMAS - Order of Operations
+// let result = 5 * (10-3)**2;
+/*By order of operations you would go:
+10 - 3 = 7
+7**2 = 49
+49 * 5 = 245
+result = 245
+ */
+
+let likes = 10;
+
+likes++; //likes (likes is = 10) = likes + 1;
+likes += 10; // likes = likes(current value) + 10
+console.log(likes); // output should be 1
+
+// NaN = Not a Number - occurs when calculation doesn't result in a number
+
+let result = 'the blog has ' + likes + ' likes';
+console.log(result);
 
