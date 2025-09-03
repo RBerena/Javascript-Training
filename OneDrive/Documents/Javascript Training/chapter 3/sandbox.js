@@ -122,3 +122,19 @@ switch(grade){
     default:
         console.log("Not a valid grade.");
 }
+
+// Variables & Variable Scope
+let age = 30; // global scope - accessible anywhere
+
+if(true){
+    let age = 40; // Block/local scope - accessible only within this block
+    let name  = "Ray"
+    console.log('inside 1st code block: ', age, name);
+
+    if(true){
+        let age = 50;
+        console.log('inside 1st code block: ', age);
+    }
+}
+
+console.log('outside code block: ', age, name);
