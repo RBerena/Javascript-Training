@@ -86,7 +86,18 @@ myFunction(value => {
     console.log(value);
 });
 
-let people = ['Mark Scheifele', 'Kyle Connor', 'Gabriel Vilardi', 'Josh Morrissey', 'Dylan Demelo'];
+const people = ['Mark Scheifele', 'Kyle Connor', 'Gabriel Vilardi', 'Josh Morrissey', 'Dylan Demelo'];
 
-people.forEach(person => console.log(`Starting for your Winnipeg Jets, ${person}!`));
+// people.forEach(person => console.log(`Starting for your Winnipeg Jets, ${person}!`));
 
+const ul = document.querySelector('.people');
+
+let html = '';
+
+people.forEach(person =>
+    // Create html template for each person
+    html += `<li style="color: blue">${person}</li>`
+);
+
+console.log(html);
+ul.innerHTML = html;
