@@ -1,0 +1,35 @@
+.error {
+    padding: 10px;
+    color: crimson;
+    border: 1px dotted crimson;
+}
+
+.success{
+    padding: 10px;
+    color: limegreen;   
+    border: 1px dotted limegreen;
+}
+
+.pikachu{
+    padding: 10px;
+    color: yellow;   
+    border: 1px dotted yellow;
+}
+
+.charizard{
+    padding: 10px;
+    color: orange;   
+    border: 1px dotted orange;
+}
+
+.mew{
+    padding: 10px;
+    color: plum;   
+    border: 1px dotted plum;
+}
+
+.mewtwo{
+    padding: 10px;
+    color: lavender;   
+    border: 1px dotted lavender;
+}

@@ -48,8 +48,8 @@ content.innerHTML += '<h2> This is a new H2</h2>';
 
 const pokemon = ['Pikachu','Charizard','Mew','Mewtwo'];
 
-pokemon.forEach(person => {
-    content.innerHTML += `<p> ${person}</p>`;
+pokemon.forEach(poke => {
+    content.innerHTML += `<p> ${poke}</p>`;
 })
 
 // Get and update attributes
@@ -65,17 +65,17 @@ console.log(link.getAttribute('href'));
 // Change link text to RRC Hub Website
 link.innerText = "RRC Hub Website";
 // message is the selector for the error class
-const message = document.querySelector('.error');
+// const message = document.querySelector('.error');
 
-console.log(message.getAttribute("class"));
+// console.log(message.getAttribute("class"));
 
 // Change class of 'error' to 'success'
-message.setAttribute('class', 'success');
+// message.setAttribute('class', 'success');
 
-console.log(message.getAttribute("class"));
+// console.log(message.getAttribute("class"));
 
 // Change CSS of attribute
-message.setAttribute('style', 'color: red;');
+// message.setAttribute('style', 'color: red;');
 
 const h1 = document.querySelector('h1');
 // Set attribute completely overrides styles  that are currently applied
@@ -88,3 +88,18 @@ title.style.margin = "50px"; // This doesn't override the previous attributes
 title.style.color = "crimson";
 title.style.fontSize = "100px";
 title.style.margin = ''; // This removes the property
+
+const message = document.querySelector('p');
+console.log(message.classList);
+
+message.classList.add('error');
+
+const error = document.querySelectorAll("p");
+error.forEach( err => {
+    if( err.textContent.includes("error")){
+        err.classList.add('error');
+    }
+    else if(err.textContent.includes("success")){
+        err.classList.add('success');
+    }
+})
