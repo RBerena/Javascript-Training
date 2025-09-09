@@ -27,3 +27,64 @@ console.log(errors);
 // Get elements by tag name
 const paras = document.getElementsByTagName("p");
 console.log(paras[2]);
+
+// 
+const p = document.querySelector('p');
+
+// console.log(p.innerHTML);
+// p.innerHTML = "Text overrided";
+
+const ps = document.querySelectorAll('p');
+
+ps.forEach((p => {
+    console.log(p.innerText);
+    p.innerText += ' New Text';
+}));
+
+const content = document.querySelector(".content")
+
+// console.log(content.innerHTML);
+content.innerHTML += '<h2> This is a new H2</h2>';
+
+const pokemon = ['Pikachu','Charizard','Mew','Mewtwo'];
+
+pokemon.forEach(person => {
+    content.innerHTML += `<p> ${person}</p>`;
+})
+
+// Get and update attributes
+const link = document.querySelector('a');
+
+console.log(link.getAttribute('href'));
+
+link.setAttribute('href', 'rrc.hub.ca');
+
+// Choose attribute of href
+console.log(link.getAttribute('href'));
+
+// Change link text to RRC Hub Website
+link.innerText = "RRC Hub Website";
+// message is the selector for the error class
+const message = document.querySelector('.error');
+
+console.log(message.getAttribute("class"));
+
+// Change class of 'error' to 'success'
+message.setAttribute('class', 'success');
+
+console.log(message.getAttribute("class"));
+
+// Change CSS of attribute
+message.setAttribute('style', 'color: red;');
+
+const h1 = document.querySelector('h1');
+// Set attribute completely overrides styles  that are currently applied
+//h1.setAttribute('style', 'margin: 50px');
+
+console.log(title.style);
+console.log(title.style.color);
+
+title.style.margin = "50px"; // This doesn't override the previous attributes
+title.style.color = "crimson";
+title.style.fontSize = "100px";
+title.style.margin = ''; // This removes the property
